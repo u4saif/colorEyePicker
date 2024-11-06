@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# ColorPicker 
+### it is a precise eyedropper and color selection tool that 
+### lets you pick color values directly from webpages and other sources.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- The ColorPicker extension provides users with a powerful, zoom-enabled eyedropper tool for precise color selection from webpages and digital content. 
+- This extension is essential for designers, developers, and digital creators seeking accurate color values directly from their browser environment.
 
-Currently, two official plugins are available:
+# Build with the Help of (React + TypeScript + Vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ColorPicker Tool Overview
 
-## Expanding the ESLint configuration
+👉 ColorPicker is a precise eyedropper and color selection tool that lets you pick color values directly from webpages and other sources.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+🌈 The ColorPicker extension provides users with a powerful, zoom-enabled eyedropper tool for precise color selection from webpages and digital content. This extension is essential for designers, developers, and digital creators seeking accurate color values directly from their browser environment.
 
-- Configure the top-level `parserOptions` property like this:
+📌 Feedback 
+If you encounter a bug, please use the feedback forum to alert the developer rather than leaving a review. ColorPicker requires permissions for all websites to be readily available whenever you need it. This permission is essential for utilizing the tabs API, and the extension strictly respects user privacy. ColorPicker is also highly configurable, and the source code is publicly accessible here: GitHub https://github.com/u4saif/colorEyePicker ColorPicker. Contributions are welcome!
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Using ColorPicker
+Colors are picked from a snapshot of the page, which updates only when you scroll. To refresh the snapshot, press "r" or use the "re-snap" button. If you see an error after switching tabs, it's a security feature—press "R," scroll, or restart ColorPicker.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+ColorPicker may not function on certain pages by default, like the Chrome Web Store or file:// URLs. To enable local file support, go to tools > extensions manager and allow file URL access.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+If you encounter issues:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Try using ColorPicker on a different website or in a new tab.
+Reloading the tab or extension can often resolve problems.
+For unsupported pages, try the ColorPicker desktop app (available for Mac and PC) or mobile versions for iOS and Android, which include additional features like color-based mini-games.
+
+Troubleshooting Tips
+For some users, it may take a few attempts to start working; refreshing the page or reloading the extension may help. Occasionally, switching to another application and back to Chrome can reset the tool.
+
+ColorPicker uses a lossless PNG quality setting to detect colors; if this leads to issues, you can disable it for JPEG quality.
+
+Display and Color Accuracy
+Note that your monitor's color space settings impact ColorPicker’s precision. Ensure that Chrome is set to sRGB and restart if necessary, as differing color spaces may cause slight variations in color values.
+
+License and Additional Information
+For business users, please purchase the appropriate license. The tool includes a magnifying zoom feature to ensure pixel-perfect alignment during development. In the future, ColorPicker may support URL rewriting with affiliate links, but this feature is off by default and can be disabled.
+
+Thank you for using ColorPicker!
