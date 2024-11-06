@@ -1,11 +1,11 @@
 import "./App.css";
-import Home from "./Pages/home";
+import ColorPicker from "./Pages/ColorPicker";
  
 
 function App() {
   return (
     <>
-      <Home />
+      <ColorPicker />
     </>
   );
 }
